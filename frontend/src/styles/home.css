@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+:root{
+    --forza-yellow: #f9a825;
+    --forza-dark: #111111;
+    --forza-text: #ffffff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--forza-dark);
+    color: var(--forza-text);
+    line-height: 1.6;
+  }
+
+.forza-app {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/forzaImgs/forzaHome.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: 9999;
+    cursor: default;
+    display: flex;
+}
+
+.forza-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 9999;
+    cursor: default;
+    background: url('../forzaImgs/forzaHorizon4.jpg') no-repeat center center/cover;
+    background-size: cover;
+  
+ 
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-left: -400px;
+  margin-top: -200px;
+}
+
+.search-bar {
+  display: flex;
+  width: 100%;
+  max-width: 20rem;
+  left: -200px;
+  position: relative;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  padding: 0.75rem 1.25rem;
+  background-color: var(--forza-yellow);
+  color: var(--forza-dark);
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #f57f17;
+}
+
+.no-user-box {
+  position: absolute;
+  right: 100px;
+  width: 400px;
+  height: 400px;
+  padding: 0px 30px;
+  margin-top: 50px;
+  background-color: rgba(36, 36, 36, 0.500);
+  color: rgba(255, 255, 255, 0.679);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(36, 36, 36, 1);
+  text-align: center;
+}
+
+.no-user-box h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.no-user-box h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.user-box {
+  position: absolute;
+  right: 100px;
+  width: 400px;
+  height: auto;
+  padding: 0px 30px;
+  margin-top: 50px;
+  background-color: rgba(36, 36, 36, 0.500);
+  color: rgba(255, 255, 255, 0.795);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(36, 36, 36, 1);
+  text-align: center;
+}
+
+.user-box h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.user-box p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.boxes {
+  width: auto;
+  height: 40px;
+  background-color: rgba(68, 68, 68, 1);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.boxe {
+  width: auto;
+  height: 40px;
+  background-color:  rgba(85, 0, 142, 1);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 0;
+}
+
+.platform-level {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; 
+}
+
+.time-cars {
+  display: flex;
+  justify-content: space-between; /* Time and Cars next to each other */
+  gap: 10px;
+  color: white;
+}
+
+.garage-miles {
+  display: flex;
+  justify-content: space-between; /* Time and Cars next to each other */
+  gap: 10px;
+}
+
+.colors{
+  color: white;
+  text-shadow: 1px 1px 2px rgba(154, 2, 255, 1), -1px -1px 2px rgba(154, 2, 255, 1), 1px -1px 2px rgba(154, 2, 255, 1), -1px 1px 2px rgba(154, 2, 255, 1);
+}
+
+.search-bar-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.suggestion-box {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+  border: 1px solid #fff4f4;
+  background-color: #f20808;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.suggestion-box li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-box li:hover {
+  background-color: #19ffc2;
+}
+
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar {
+    flex-direction: column;
+  }
+  
+  .search-bar input {
+    border-radius: 4px 4px 0 0;
+  }
+  
+  .search-bar button {
+    border-radius: 0 0 4px 4px;
+  }
+}
